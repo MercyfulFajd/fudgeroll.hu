@@ -8,8 +8,8 @@ function showSwitch(id) {
     }
 
 }
-function getPhp(from,target,id) {
-    $.post(from,{"id":id}, function (result) {
+function getPhp(from, target, id) {
+    $.post(from, {"id": id}, function (result) {
 	$(target).html(result);
 
 
@@ -20,47 +20,60 @@ function getPhp(from,target,id) {
 
 }
 
-function openBookAt(charachterPath){
-    $.getJSON(charachterPath, function(charachter){
+function openBookAt(charachterPath) {
+    $.getJSON(charachterPath, function (charachter) {
 	var pagePath = charachter.place;
-	$.getJSON(pagePath, function(page){
+	$.getJSON(pagePath, function (page) {
 	    $('main').fadeOut('slow');
 	    $('main').empty();
-	    
-	    alert(page.text+charachter.charName)
-	    
-	    
-	    
-	});
-	
+	    $('main').attr("id", "page");
 
-  });
-    
-    
+	    //alert(page.text + charachter.charName)
+
+
+
+	});
+
+
+    });
+
+
 }
 
-function getBook(id){
-    if(Number.isInteger(id)){
-    getPhp("php/getBook.php",'main',id);
+function getBookCover(id) {
+    if (Number.isInteger(id)) {
+	getPhp("php/getBook.php", 'main', id);
+	$('main').attr("id", "bookCover");
+    } else {
+	alert("Valami baj van")
     }
-else{alert("Valami baj van")}
+    $('main').attr("id", "cover");
+    main();
 }
 
 function news() {
     getPhp("php/getNews.php", 'main');
+    $('main').attr("id", "news");
+    main();
 }
 function books() {
     getPhp("php/getBooksList.php", 'main');
-    
-    
+    $('main').attr("id", "gallery");
+    main();
+
+
 }
 
 
 
 
 //Eseményfigyelők
-$("#openReadMenu").click(function(){books()});
-$("#openNews").click(function(){news()});
+$("#openReadMenu").click(function () {
+    books()
+});
+$("#openNews").click(function () {
+    news()
+});
 
 
 //init()

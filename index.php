@@ -43,8 +43,8 @@ if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
 	<main></main>
 	
 	    <!--JavaScript-->
-	    <script src="js/index.js" type="text/javascript"></script>
 	    <script src="style/index.css.js" type="text/javascript"></script>
+	    <script src="js/index.js" type="text/javascript"></script>
 	    
 	    
     </body>
