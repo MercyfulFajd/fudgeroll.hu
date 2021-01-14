@@ -25,13 +25,13 @@ if ($line = $get->fetch_assoc()) {
     
     
     
-    echo "<div class='w3-container w3-center'>"
+    echo "<div>"
 	."<h1>$line[title]</h1>"
 	."<img alt='A könyv borítója' src='$line[coverPicture]'>"
 	."<h3>$line[coverText]</h3>"
 	."<p>$line[synopsis]</p>"
 	."</div>"
-	."<div class='w3-bar w3-center w3-padding w3-theme-d1'><button class='w3-mobile w3-btn w3-theme-l1' onclick='openBookAt($target)'>Új kaland indítása</button>";
+	."<div class='barBtn'><button onclick='openBookAt($target)'>Új kaland indítása</button>";
     
     
     
@@ -43,8 +43,8 @@ $sqlGetBookmark ="SELECT bookmarkPath FROM bookmarks WHERE bookID = $bookID AND 
 $get = $conn->query($sqlGetBookmark) or die("Hiba a könyvjelző lekérése során");
 if ($line = $get->fetch_assoc()) {
     
-    $target =  '"'.$line['bookmarkPath'].'"' ;
-    echo "<button class='w3-mobile w3-btn w3-theme-l1' onclick='openBookAt($target)'>Előző Kaland folytatása</button><div>";
+    $target =  '"'.$line['bookmarkPath'].'"';
+    echo "<button onclick='openBookAt($target)'>Előző Kaland folytatása</button><div>";
     
     
 }
@@ -52,7 +52,7 @@ else{echo "</div>";}
 
 }
 else{
-    echo "<div class='w3-card w3-theme-l2'>Az olvasáshoz be kell jelentkezni.</div>";
+    echo "<div class='error'>Az olvasáshoz be kell jelentkezni.</div>";
 }
 
 

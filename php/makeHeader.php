@@ -1,6 +1,6 @@
 <?php require_once 'makeConnection.php';
     
-    echo "<header><div id='title'><img alt='Fajd Logo' src=".getImageUrl($conn, 1).">FudgeRoll</div><div id='userZone'>";
+    echo "<div><div id='title'><img alt='Fajd Logo' src=".getImageUrl($conn, 1).">FudgeRoll</div><div id='userZone'>";
 	    if ($loggedin) {
 		    makeButton('showSwitch("logoutForm")', 'Kilépek', 'button');
 		    makeButton('showSwitch("profileForm")', 'Profil', 'button');
@@ -9,7 +9,7 @@
 		    makeButton('showSwitch("registerForm")', 'Regisztrálok', 'button');
 		}
 		
-		echo '</div></header>';
+		echo '</div></div>';
 		
 	   
 

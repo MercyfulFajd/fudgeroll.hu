@@ -1,8 +1,8 @@
 <?php
 //kapcsolat konstansok
 define("HOST", "localhost");
-define("USER", 'fudgeroll');
-define("PW", "#69Sz4TT");
+define("USER", 'root');
+define("PW", "");
 define("DB", "fudgeroll");
 //kapcsolat nyitása
 $conn=new mysqli(HOST, USER, PW, DB) or die("Nincs Kapcsolat");

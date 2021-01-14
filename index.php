@@ -20,24 +20,24 @@ if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
 	<link rel="icon" href="<?php echo getImageUrl($conn,1);?>"/>
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	<script src="https://kit.fontawesome.com/1b4bace53e.js"></script>
-	<link href="style/colorTheme.css" rel="stylesheet" type="text/css"/>
+	<link id="colorSheme" href="style/colorShemes/default.css" rel="stylesheet" type="text/css"/>
 	<script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-1.9.0.js"></script>
-	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"/>
+	
 	
 	<!-- További Javascript file-ok a body végén -->
 
     </head>
     <body style="display:none">
-	<?php require_once 'php/makeHeader.php';
-	
-	?>
+	<header>
+	<?php require_once 'php/makeHeader.php';?>
 	
 	    <nav>
-		<button class="button w3-sepia" id="openNews">Hirek</button>
-		<button class="button" id="openReadMenu">Kaland Olvasása</button>
+		<button class="button w3-theme-l4" id="openNews">Hirek</button>
+		<button class="button" id="openLibary">Kaland Olvasása</button>
 		<button class="button disabled" id="openWriter">Kaland Írása</button>
 		<button class="button disabled" id="openForum">Fórum</button>
 	    </nav>
+	    </header>
 
 	
 	<main></main>

@@ -1,6 +1,6 @@
 {
-    "place":"json/defaultPage.json",
-    "charName":"Csörike",
+    "place":"assets/libary/0/startPage.json",
+    "charName":"Csöörike",
     "atributes":[{"label":"csip","value":"2"},{"label":"csipcsip","value":"1"},{"label":"vauvau","value":"-3"}]
 	
     }  
