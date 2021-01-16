@@ -7,7 +7,7 @@ $userName = trim($_POST["userName"]);
 $password = trim($_POST["password"]);
 $passwordAgain = trim($_POST["passwordAgain"]);
 $_SESSION['errorMessage'] = 'Minden ok';
-//Elvileg Javascrip ezeket elintézi, de sose árt kétszer ellenörizni. (javascript kijátszható)
+//Elvileg Javascrip ezeket elint�zi, de sose �rt k�tszer ellen�rizni
 if ($userName == ""){$_SESSION['errorMessage'] = "Felhasználónév kiürült";}
 if (strlen($password)<$passwordMinLength){$_SESSION['errorMessage'] = "Jelszó túl rövid";}
 if ($password != $passwordAgain){$_SESSION['errorMessage'] = "Két jelszó nem egyenlő";}
@@ -27,5 +27,5 @@ if ($_SESSION['errorMessage']== 'Minden ok') {
 // lezárás
     $conn->close();
 // Vissza a lapra
-    header("Location : $homeAddress");
+    header("Location:".$_SERVER['HTTP_REFERER']);
 ?>

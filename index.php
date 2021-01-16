@@ -16,10 +16,10 @@ if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
 	<title>FudgeRoll</title>
 	<meta charset="utf-8"/>
 	<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-	<meta name="description" content="Kalandkönyv szerkeztő és olvasó"/>
+	<meta name="description" content="Kalandkönyv szerkezt? és olvasó"/>
 	<link rel="icon" href="<?php echo getImageUrl($conn,1);?>"/>
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-	<script src="https://kit.fontawesome.com/1b4bace53e.js"></script>
+	
 	<link id="colorSheme" href="style/colorShemes/default.css" rel="stylesheet" type="text/css"/>
 	<script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-1.9.0.js"></script>
 	
@@ -45,6 +45,7 @@ if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
 	    <!--JavaScript-->
 	    <script src="style/index.css.js" type="text/javascript"></script>
 	    <script src="js/index.js" type="text/javascript"></script>
+	    <script src="https://kit.fontawesome.com/1b4bace53e.js"></script>
 	    
 	    
     </body>

@@ -7,10 +7,10 @@ require_once 'globalVariables.php';
 $_SESSION = array();
  
 //lezár
-session_destroy();
+session_unset();
  
 //Vissza a nyitóra
-header("Location: $homeAddress");
+header("Location:".$_SERVER['HTTP_REFERER']);
 
 ?>
 

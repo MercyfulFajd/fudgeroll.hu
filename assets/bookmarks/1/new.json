@@ -1,7 +1,8 @@
 {
-    "place":"assets/libary/0/startPage.json",
-    "charName":"Csöörike",
-    "atributes":[{"label":"csip","value":"2"},{"label":"csipcsip","value":"1"},{"label":"vauvau","value":"-3"}]
+    "bookID":1,
+    "place":"assets/libary/1/startPage.json",
+    "charName":"Csipike",
+    "atributes":[{"label":"Erő","value":3},{"label":"Ész","value":3},{"label":"Gazdagság","value":3}]
 	
     }  
     

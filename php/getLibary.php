@@ -6,7 +6,7 @@ $get = $conn->query($sqlGetBooks) or die("Hiba a könyvek lekérése során");
 		while ($line = $get->fetch_assoc()) {
 		    echo
 		    "<article onclick=getBookCover($line[bookID])>"
-		    ."<img src='https://drive.google.com/uc?export=view&id=0Bw08dIGjEPFdSWtMTXcyZGxVaXc' alt='A könyv Boritója' />"
+		    ."<img src='$line[coverPicture]' alt='A könyv Boritója' />"
 		    ."<div>$line[coverText]</div>"
 		    ."<span><b>$line[title]</b><br><br>A könyv szerzője: <i>$line[userName]</i></span>"
 		    
@@ -15,7 +15,7 @@ $get = $conn->query($sqlGetBooks) or die("Hiba a könyvek lekérése során");
 		    
 		    
 			    
-		    
+		    https://photos.google.com/share/AF1QipN_A48i7gLE8-iLnwykAMjadYF5LTYRwxV-iHeydQyl6i-Fd-koiD01xccOowyNPg/photo/AF1QipNq4CiQSmW2oBMpFyEjLfz1bR3LImSknTGTS8VL?key=YlpfMk8zR3lOakNtRkpKTmpzclMxcnUzVzJrNjJn
 		    
 		}
 $conn->close();	?>

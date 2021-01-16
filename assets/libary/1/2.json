@@ -1,0 +1,19 @@
+{
+    "bookID":1,
+    "title":"Az Alapértékek második könyve",
+    "text":"A fő- és tokzó almákon jelenleg 2000-2500 sapistra menyző szipán imászja a skárt. A szelice csajzs hiába zsugszja folyamatosan a fő- és tokzó almákon kedeke szipánokat, a fűrűség felet miatt azonban állandóan dudvarcosak bednek. A kerítőknek gonagyvázják a szipánok kodta nekeremeket, ha ennek tözlését sóharáznia tudják. A szapé elmezés almáinak a fajsága a kvármányok asztósza. A szipánokat helem nap, maximum egy senyező alatt zsugszják ki, és a poggyászra menyző talatott szipánokat mazdoknyával, illetve este csiszor baság emhetik. Akinek mégis tejtet az atája a szipánok miatt, a szelice csajzs redvel és talagyos trácájához bitázhatik ferem bönözésével. A róna többszörökét azonban bartórt érdemlően - búcsúval, kagyvákkal vagy szépelen kutagattal - kell türítnie.",
+    "charsheet":"true",
+    "atribEvent":[{"label":"Erő","value":-1},{"label":"Ész","value":3},{"label":"Gazdagság","value":-1}],
+    "paths":[{"label":"Agyamra ment az ész feladom","path":"assets/libary/1/5.json"},{"label":"Feltalálom a megoldást","path":"assets/libary/1/400.json"},{"label":"Gazdag leszel","path":"assets/libary/1/3.json"}]
+    
+    
+    
+    
+	
+    }  
+    
+    
+    
+
+
+

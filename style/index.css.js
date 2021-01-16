@@ -1,6 +1,7 @@
 function setColorSheme(target) {
     path = "style/colorShemes/" + target + ".css";
     $("#colorSheme").attr('href', path);
+    //console.log("set colorsheme to "+target+" a fálj itt található: "+path);
 
 }
 function main() {
@@ -37,8 +38,8 @@ function main() {
 
 
 	    break;
-	case "cover":
-	    setColorSheme("default");
+	case "page":
+	    //setColorSheme done by index.js.openBookAt;
 	    $("main div").addClass("w3-container w3-center");
 	    $(".barBtn").addClass("w3-bar w3-center w3-padding w3-theme-d1");
 	    $(".barBtn button").addClass("w3-mobile w3-btn w3-theme-l1");
@@ -67,6 +68,7 @@ $(document).ready(function () {
     $("nav a").addClass("w3-bar-item");
     $(".disabled").hide();
     $("body").fadeIn('slow');
+    
 
 
 //Eseményfigyelők beállítása

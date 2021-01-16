@@ -1,5 +1,14 @@
 {
+    "bookID":"0",
+    "page":"1",
+    "color":"default",
     "title": "Az Alapértékek Első könyve",
-    "text": "Nyeh",
-    "paths":[{"label":"Egyik út","path":"assets/bookmarks/0/1.json"},{"label":"Másik út","path":"assets/bookmarks/0/2.json"},{"label":"Harmadik út","path":"assets/bookmarks/0/3.json"}]
+    "text": "Az Egyik úton azon nyakony lamolyok szadrodnának, amelyeket minimum 3-4 loglya mutál és muzsoz. Jó lenne ha háklyás „ritó” lamolyok golyáját is fitné. Ha tudja, hogy miért éppen úgy kepít a a lamoly, ahogy csöngös muzsozják, akkor kérem, hogy azt is finálja le. A háklyás lamolyok mellé kérem finálja oda a szedókusukat is. Szürjés, hogy a csöngös számára költ, teljesen közös marétokat is ficásodja, hisz a szédlemzéshez erre is valon van. A besegedő, esetleg a másokat hartaktan lamolyokat ne kacsatja ki. Nyugodtan finálja le a kedő marétokat is, mint például a lapsalaj, hetenység stb.",
+    "paths":[{"label":"Vissza inkább","path":"assets/libary/0/startPage.json"},{"label":"Át a másik útra","path":"assets/libary/0/2.json"},{"label":"volt egy harmadik is","path":"assets/libary/0/3.json"}]
 } 
+
+
+
+
+
+

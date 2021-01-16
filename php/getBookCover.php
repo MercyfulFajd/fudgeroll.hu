@@ -31,8 +31,9 @@ if ($line = $get->fetch_assoc()) {
 	."<h3>$line[coverText]</h3>"
 	."<p>$line[synopsis]</p>"
 	."</div>"
-	."<div class='barBtn'><button onclick='openBookAt($target)'>Új kaland indítása</button>";
-    
+	."<div class='barBtn'><button onclick='openBook($target)'>Új kaland indítása</button>";
+    /*késöbb ide kerülhet egy figyelmeztetés, ha már van mentés,
+ *  hogy új kaland esetén törlödni fog.*/
     
     
     

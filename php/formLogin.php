@@ -4,15 +4,15 @@ session_start();
 require_once 'globalVariables.php';
 require_once 'makeConnection.php';
 
-//Ã¼res vÃ¡ltozÃ³k
+//üres változok
 $name = $_POST["userName"];
 $password = $_POST["password"];
-//FelhasznÃ¡lÃ³nÃ©v ellenÃ¶rzÃ©se
+//Felhasználónév ellenörzése
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Prepare a select statement
 	$q = "SELECT password, userID FROM users WHERE userName='" . trim($_POST["userName"] . "'");
-	$get = $conn->query($q) or $_SESSION['errorMessage']="Hiba a jelszÃ³ellenÅ‘rzÃ¡s sorÃ¡n";
+	$get = $conn->query($q) or $_SESSION['errorMessage']="Hiba a jelszóellen?rzés során";
 	$holder = $get->fetch_assoc();
 	if (empty($holder)) {
 	    
@@ -31,18 +31,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 			    } else {
 
-		$_SESSION['errorMessage'] = "A jelszÃ³ nem jÃ³";
+		$_SESSION['errorMessage'] = "A jelszó nem jó";
 	    }
 	}
     } else {
-	$_SESSION['errorMessage'] = "A bejelentkezÃ©s nem sikerÃ¼lt";
+	$_SESSION['errorMessage'] = "A bejelentkezés nem sikerült";
     }
 
 
-    // lezÃ¡rÃ¡s
+    // lezárás
     $conn->close();
     // Vissza a lapra
-    header("Location: $homeAddress");
+    header("Location:".$_SERVER['HTTP_REFERER']);
 
 
     ?>

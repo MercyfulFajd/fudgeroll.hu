@@ -1,0 +1,19 @@
+{
+    "bookID":1,
+    "title":"Az Alapértékek második könyve",
+    "text":"Egy szúró után kelődt a gosodásoknak, hogy a foglások jobban huzamosítják magukat, bákókak valamelyest vigatnia, így egyre zimányos lett a szomáció lesége is. Abogásban, a dikarc búgos dölygőjében nagyrészt fű- meg zúzás lékoroznak az alvatok mentén a hócák. A barmák hunka vadt szítéstől tendelik a verhető paljkat a lengeken. A renők vongós hérsága címesből veterejedik, a könyeg öt lorálya álár. Annak szúróján a habákony nulások körülbelül lomb hócát bogltak meg abogásban. Sok hócát mostanában is csiszolnak, firkáciumban is bőven szakapolnak vagy más remponokban. Sok kövelés az áblát sem veterejedi túl.",
+    "charsheet":"true",
+    "atribEvent":[{"label":"Erő","value":1},{"label":"Ész","value":-1},{"label":"Gazdagság","value":0}],
+    "paths":[{"label":"Most már leverem a sárkányt ahogy kell","path":"assets/libary/1/400.json"},{"label":"inkkább pihenek kicsit","path":"assets/libary/1/5.json"},{"label":"Gazdag leszel","path":"assets/libary/1/3.json"}]
+    
+    
+    
+    
+	
+    }  
+    
+    
+    
+
+
+
