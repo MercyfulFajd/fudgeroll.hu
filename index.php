@@ -32,7 +32,7 @@ if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
 	<?php require_once 'php/makeHeader.php';?>
 	
 	    <nav>
-		<button class="button w3-theme-l4" id="openNews">Hirek</button>
+		<button class="button w3-theme-l5" id="openNews">Hirek</button>
 		<button class="button" id="openLibary">Kaland Olvasása</button>
 		<button class="button disabled" id="openWriter">Kaland Írása</button>
 		<button class="button disabled" id="openForum">Fórum</button>

@@ -1,5 +1,5 @@
 //Funkciók
-function showSwitch(id) {$("#" + id).toggle();}
+
 function isNeeded(target) {return typeof target != "undefined"}
 function ladder(step){
     var back;

@@ -4,6 +4,7 @@ function setColorSheme(target) {
     //console.log("set colorsheme to "+target+" a fálj itt található: "+path);
 
 }
+function showSwitch(id) {$("#" + id).fadeToggle("slow");}
 function main() {
     $("main").addClass("w3-container w3-row w3-theme-d3");
     style = $("main").attr('id');
@@ -66,8 +67,12 @@ $(document).ready(function () {
     $("#userZone").addClass("w3-container w3-third w3-right-align");
     $("nav").addClass("w3-theme-d2 w3-bar-block");
     $("nav a").addClass("w3-bar-item");
+    $("nav button").addClass("w3-button");
     $(".disabled").hide();
     $("body").fadeIn('slow');
+    $(".hiding").addClass('w3-modal w3-animate-zoom');
+    $(".hiding div").addClass('w3-modal-content w3-theme-dark w3-card-4');
+    $(".hiding nav").addClass('w3-panel w3-theme-l1');
     
 
 
