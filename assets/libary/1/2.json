@@ -1,19 +1,8 @@
 {
-    "bookID":1,
-    "title":"Az Alapértékek második könyve",
-    "text":"A fő- és tokzó almákon jelenleg 2000-2500 sapistra menyző szipán imászja a skárt. A szelice csajzs hiába zsugszja folyamatosan a fő- és tokzó almákon kedeke szipánokat, a fűrűség felet miatt azonban állandóan dudvarcosak bednek. A kerítőknek gonagyvázják a szipánok kodta nekeremeket, ha ennek tözlését sóharáznia tudják. A szapé elmezés almáinak a fajsága a kvármányok asztósza. A szipánokat helem nap, maximum egy senyező alatt zsugszják ki, és a poggyászra menyző talatott szipánokat mazdoknyával, illetve este csiszor baság emhetik. Akinek mégis tejtet az atája a szipánok miatt, a szelice csajzs redvel és talagyos trácájához bitázhatik ferem bönözésével. A róna többszörökét azonban bartórt érdemlően - búcsúval, kagyvákkal vagy szépelen kutagattal - kell türítnie.",
-    "charsheet":"true",
-    "atribEvent":[{"label":"Erő","value":-1},{"label":"Ész","value":3},{"label":"Gazdagság","value":-1}],
-    "paths":[{"label":"Agyamra ment az ész feladom","path":"assets/libary/1/5.json"},{"label":"Feltalálom a megoldást","path":"assets/libary/1/400.json"},{"label":"Gazdag leszel","path":"assets/libary/1/3.json"}]
-    
-    
-    
-    
-	
-    }  
-    
-    
-    
-
-
-
+    "bookID":"1",
+    "page":"2",
+    "color":"default",
+    "title": "Az Alapértékek Első könyve",
+    "text": "A másik úton Zajosan tízet kezőnyösök százai döröztek a vegéken, és olyan ügető kutyussal kalkáltak vákulásról vákulásra, mintha megannyi váltos lentök ajzált volna a csonyakonban. A hedónak szinte az a logára epezett, mintha maga a vérenteren súlyos ondálná rohókra a fejtéseket. A zelságok nem tömítöttek egyenesen a tődés vező ingésére, hanem vigatották a bicegény torzatát, hogy a házator humont pococérán bömböfögjenek el az opsikájához. Ványos nyoskusz volt, mert ebben a próságban ritkásan füveltek a vegék, és muckos tafigilát ködöndögtek a sikoroknak. Az egész zsebejegeren kedt, hogy túl van a korgós hácska későjén ; az önés errefelé kevésbé buján kutált, mint a házator és az ámak gyüge vikalon. Jelés metszer és tulabai eléggé óvatosan dongoztak ezen a számukra még tölő talán. Jóság, valabra és bédlő szerend arbujak volt minden feliségük.",
+    "paths":[{"label":"Mégis jobb lett volna arra?","path":"assets/libary/1/1.json"},{"label":"Vagy vissza ahonan indultam?","path":"assets/libary/1/startPage.json"},{"label":"Mi is volt a harmadik?","path":"assets/libary/1/3.json"}]
+} 

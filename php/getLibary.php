@@ -1,5 +1,7 @@
 
 <?php
+session_start();
+unset($_SESSION['errorMessage']);
 require_once 'makeConnection.php';
 $sqlGetBooks="SELECT bookID, title, coverText,coverPicture,userName FROM books LEFT JOIN users ON users.userID = books.userID";
 $get = $conn->query($sqlGetBooks) or die("Hiba a könyvek lekérése során");

@@ -1,81 +1,30 @@
 <?php
 
+
 class makeButton {
 
-    private $label;
-    private $name;
-    private $type;
     private $id;
-    private $value;
-    private $moreStuff;
+    private $class;
+    private $action;
+    private $type;
 
-    function __construct($label, $name, $type = "text") {
-	$this->label = $label;
-	$this->name = $name;
-	$this->type = $type;
-	$this->id = $name;
-	$this->value = null;
-
-	$this->moreStuff = "";
-    }
-
-    public function setId($id) {
+    function __construct($label, $id, $action, $class = "btn") {
 	$this->id = $id;
-	return $this;
+	$this->class = $class;
+	$this->action = $action;
+	$this->label = $label;
+	
     }
 
-    function getMoreStuff() {
-	return $this->moreStuff;
-    }
-
-    public function addMoreStuff($stuff) {
-	$this->moreStuff .= (' ' . $stuff);
-	return $this;
-    }
-
-    public function setValue($value) {
-	$this->value = $value;
-	return $this;
-    }
-
-    function getName() {
-	return $this->name;
-    }
-
-    function getType() {
-	return $this->type;
-    }
-
-    function getId() {
-	return $this->id;
-    }
-
-    function getValue() {
-	return $this->value;
+    public function setType($type): void {
+	$this->type = $type;
     }
 
     public function pushOutHTML() {
-	$back = '<div>';
-	$back .= $this->createLabel();
-	$back .= $this->createField();
-
-
-
-	$back .= '</div>';
-	return $back;
-    }
-
-    protected function createLabel() {
-	return '<label for="' . $this->id . '">' . $this->label . '</label>';
-    }
-
-    protected function createField() {
-	$back = '<input type="' . $this->type . '" name="' . $this->name .'" id="' . $this->id . '"';
-	if ($this->value !== null) {
-	    $back .= (' value="' . $this->value . '"');
-	}
-	$back .= ($this->moreStuff . '>');
+	$back = '<button class="w3-mobile ' . $this->class . '" onclick="' . $this->action . '" type="' . $this->type . '" id="' . $this->id . '">'.$this->label.'</button>';
 	return $back;
     }
 
 }
+?>
+    

@@ -4,10 +4,18 @@ session_start();
 require_once 'php/makeConnection.php';
 //kapcsolja a funkciókat
 require_once 'php/globalFunctions.php';
-//ellenörzi, hogy be van e lépve
+//ellenörzi, hogy be van e lépve, jogosultságkezelés
 $loggedin = false;
+$writer=false;
+$admin=false;
+    
 if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
     $loggedin = true;
+    $writer = $_SESSION["writer"]; 
+    $admin = $_SESSION["admin"]; 
+    
+    
+    
 }
 ?>
 <!Doctype html>
@@ -19,6 +27,7 @@ if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
 	<meta name="description" content="Kalandkönyv szerkezt? és olvasó"/>
 	<link rel="icon" href="<?php echo getImageUrl($conn,1);?>"/>
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	    <script src="https://kit.fontawesome.com/1b4bace53e.js"></script>
 	
 	<link id="colorSheme" href="style/colorShemes/default.css" rel="stylesheet" type="text/css"/>
 	<script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-1.9.0.js"></script>
@@ -31,21 +40,31 @@ if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
 	<header>
 	<?php require_once 'php/makeHeader.php';?>
 	
-	    <nav>
-		<button class="button w3-theme-l5" id="openNews">Hirek</button>
-		<button class="button" id="openLibary">Kaland Olvasása</button>
-		<button class="button disabled" id="openWriter">Kaland Írása</button>
-		<button class="button disabled" id="openForum">Fórum</button>
-	    </nav>
-	    </header>
-
+	    
+	</header><hr>
+	<div id='errorZone'>
+	<?php
+	if (isset($_SESSION["errorMessage"]) === true) {
+	    $errorMessages=$_SESSION['errorMessage'];
+	    
+	    
+	    echo "<h4>Hiba!!!</h4>";
+	    echo "<p>$errorMessages</p>"; 
+	    
+	    
+		    
+	}
+	?></div><hr>
+	    
+	    
 	
 	<main></main>
 	
 	    <!--JavaScript-->
 	    <script src="style/index.css.js" type="text/javascript"></script>
 	    <script src="js/index.js" type="text/javascript"></script>
-	    <script src="https://kit.fontawesome.com/1b4bace53e.js"></script>
+	    
+	    
 	    
 	    
     </body>

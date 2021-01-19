@@ -9,6 +9,7 @@ class makeForm {
     private $cancelLabel;
     private $fields;
     private $class;
+    
 	    
     
 
@@ -46,9 +47,9 @@ class makeForm {
 	
 	
 	
-	$back .= ('<nav><button type="submit">'. $this->submitLabel.'</button>');
+	$back .= ('<nav class="formNav"><button type="submit">'. $this->submitLabel.'</button>');
 	$back .= ('<button type="reset">'. $this->resetLabel.'</button>');
-	$back .= ('<span class="w3-button" onclick=showSwitch("'.$this->id.'")>'. $this->cancelLabel.'</span></nav>');
+	$back .= ('<button onclick=showSwitch("'.$this->id.'")>'. $this->cancelLabel.'</button></nav>');
 	$back .= '</div></form>';
 	
 	

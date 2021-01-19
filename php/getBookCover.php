@@ -2,6 +2,7 @@
 
 //indul a session
 session_start();
+unset($_SESSION['errorMessage']);
 require_once 'makeConnection.php';
 $bookID = $_POST['id'];$loggedin = false;
 if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
@@ -39,7 +40,7 @@ if ($line = $get->fetch_assoc()) {
     
     
 }
-else{echo "Valami örületes hiba csúszott a rendszerbe, és nincs meg a KÖNYV";}
+else{echo 1;}
 $sqlGetBookmark ="SELECT bookmarkPath FROM bookmarks WHERE bookID = $bookID AND userID = $userID";
 $get = $conn->query($sqlGetBookmark) or die("Hiba a könyvjelző lekérése során");
 if ($line = $get->fetch_assoc()) {
@@ -53,7 +54,7 @@ else{echo "</div>";}
 
 }
 else{
-    echo "<div class='error'>Az olvasáshoz be kell jelentkezni.</div>";
+    echo 2;
 }
 
 

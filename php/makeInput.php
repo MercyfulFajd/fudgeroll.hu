@@ -5,7 +5,7 @@ class makeInput {
     private $type;
     private $id;
     private $value;
-    private $placeholder;
+    
     private $moreStuff;
 	    
     function __construct($label, $name, $type = "text") {
@@ -16,6 +16,7 @@ class makeInput {
 	$this->value = null;
 	$this->placeholder = null;
 	$this->moreStuff = "";
+	return $this;
     }
     public function setId($id) {
 	$this->id = $id;

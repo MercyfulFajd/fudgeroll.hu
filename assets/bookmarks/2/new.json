@@ -1,8 +1,8 @@
 {
-    "bookID":"2",
+    "bookID":2,
     "place":"assets/libary/2/startPage.json",
-    "charName":"FudgeMaster",
-    "atributes":[{"label":"csip","value":"5"},{"label":"csipcsip","value":"3"},{"label":"vauvau","value":"0"}]
+    "charName":"Csipike",
+    "atributes":[{"label":"Erő","value":3},{"label":"Ész","value":3},{"label":"Gazdagság","value":3}]
 	
     }  
     

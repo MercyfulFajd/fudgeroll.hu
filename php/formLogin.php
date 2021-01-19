@@ -1,22 +1,24 @@
 <?php
 //Induljon a session
 session_start();
+unset($_SESSION['errorMessage']);
 require_once 'globalVariables.php';
 require_once 'makeConnection.php';
 
-//üres változok
-$name = $_POST["userName"];
-$password = $_POST["password"];
-//Felhasználónév ellenörzése
+//Ã¼res vÃ¡ltozÃ³k
+$name = htmlentities(trim($_POST["userName"]));
+$password = htmlentities(trim($_POST["password"]));
+
+//FelhasznhasznÃ¡lÃ³nÃ©v
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Prepare a select statement
-	$q = "SELECT password, userID FROM users WHERE userName='" . trim($_POST["userName"] . "'");
-	$get = $conn->query($q) or $_SESSION['errorMessage']="Hiba a jelszóellen?rzés során";
+	$q = "SELECT password, userID,isWriter,isAdmin,hasKey FROM users WHERE userName='$name'";
+	$get = $conn->query($q) or $_SESSION['errorMessage'].="Hiba a jelszÃ³ellenÃ¶rzÃ©s sorÃ¡n";
 	$holder = $get->fetch_assoc();
 	if (empty($holder)) {
 	    
-	    $_SESSION['errorMessage'] = "nincs ilyen ember";
+	    $_SESSION['errorMessage'] .= "Nincs ilyen nevÅ± felhasznÃ¡lÃ³";
 	} else {
 	    if ($holder['password'] == sha1($password)) {
 		// JÃ³ a jelszÃ³ kezdjÃ¼nk Ãºj sessiont
@@ -27,19 +29,22 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 		$_SESSION["loggedin"] = true;
 		$_SESSION["userID"] = $holder['userID'];
 		$_SESSION["username"] = $name;
-		unset($_SESSION['errorMessage']);
+		$_SESSION["writer"] = $holder['isWriter'];
+		$_SESSION["admin"] = $holder['isAdmin'];
+		$_SESSION["hasKey"] = $holder['hasKey'];
+		unset($_SESSION['errorMessage']);//vsz fÃ¶lÃ¶sleges
 
 			    } else {
 
-		$_SESSION['errorMessage'] = "A jelszó nem jó";
+		$_SESSION['errorMessage'] .= "A jelszÃ³ nem jÃ³";
 	    }
 	}
     } else {
-	$_SESSION['errorMessage'] = "A bejelentkezés nem sikerült";
+	$_SESSION['errorMessage'] .= "A bejelentkezÃ©s nem sikerÃ¼lt";
     }
 
 
-    // lezárás
+    // lezï¿½rï¿½s
     $conn->close();
     // Vissza a lapra
     header("Location:".$_SERVER['HTTP_REFERER']);

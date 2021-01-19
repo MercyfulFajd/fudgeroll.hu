@@ -1,13 +1,20 @@
 {
-    "bookID":2,
-    "title": "Az Alapértékek Harmadik könyve",
-    "trials":{"targetAtribute":0,"results":[2,3,4,5,6,7,8]}
+    "bookID":"2",
+    "page":"1",
+    "title":"Az Alapértékek második könyve",
+    "text":"A dömnyi forma a vékon és ezt nem talós kolazáson kívül postannia. Látszólag nem horog sztést és a kánikus szomorságos furahmban még szíjas kodámmal is pincol. A vékon, a latlatos nekség, a serhet latlatos eresek vátora. Az iség kedő íránya örget fáns bangot a bukány ábrájához nyúlós kezelén felé nyúlós formával szemben. Ennek a készítő formának számos bésága van ; bentika, culat ; de egyik sem lehet meg a szolves menyzése nélkül amit a rinuttal lehet pericáznia. A cimiló szarásza, kacsongja, hígsága, szovjege, külése, hályos sepűn üzlelheti bölt mécserklések nesítvényét. A lánások vilmszerű szüldő vetőjét nem lehet elég korán fusgasztnia!",
+    "charsheet":"true",
+    "atribEvent":[{"label":"Erő","value":2},{"label":"Ész","value":-1},{"label":"Gazdagság","value":-1}],
+    "paths":[{"label":"Kell még Erő, Butolok!!","path":"assets/libary/2/4.json"},{"label":"Veszek kondijegyet!","path":"assets/libary/2/6.json"},{"label":"Inkább a halál!","path":"assets/libary/2/5.json"}]
     
     
-} 
-
-
-
+    
+    
+	
+    }  
+    
+    
+    
 
 
 

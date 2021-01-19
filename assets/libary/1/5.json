@@ -1,10 +1,11 @@
 {
     "bookID":"1",
     "page":"5",
-    "color":"red",
-    "title": "Az Alapértékek Második könyve",
-    "text": "A restet megöli vágyakozása, mert a két keze nem akar dolgozni, egész nap csak vágyakozik, ...(Péld 25-26) Már megint",
-    "paths":[{"label":"Nincs kiút!","path":"#"},{"label":"Feladtad!","path":"#"},{"label":"Hiába minden!","path":"#"}]
+    "color":"gold",
+    "title": "Az Alapértékek Első könyve",
+    "text": "A sárkány legyözve hever elötted, tied a kincs a a paripa és a királylány levágott keze"
+    
+    
 } 
 
 

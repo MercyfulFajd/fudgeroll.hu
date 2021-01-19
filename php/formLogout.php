@@ -1,8 +1,7 @@
 <?php
 //menjen még a session
 session_start();
-require_once 'globalVariables.php';
- 
+unset($_SESSION['errorMessage']);
 //kiürít
 $_SESSION = array();
  

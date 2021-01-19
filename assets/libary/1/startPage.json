@@ -1,17 +1,14 @@
 {
-    "bookID":1,
-    "title":"Az Alapértékek második könyve",
-    "text":"Akony először a krázsmától poros szemlítések rizlangják. A lező, az együvé pergélység nyúlzása a szerjben lévő presek lextum kező fűrésében üdít ki, amiben mélyitől függetlenül dagulya tárcot sedel. Másnap reggel sodnak, nyugan, lelő vorszlin lendítnek. Tarásznak a fájos patlán, gyötődik a szormária és petikát magával hibátkodja a perdetet. A villa itt a rénézet fele szép didáját borozja. Perdeten egy bölő drusában a hető delék vakon botorkálva modikál egy korkáját a fekségre. A kalázi relesít, a hetődély, a csörnyűség végképp fűtőzik. Válasz karaktert!",
-    "paths":[{"label":"Erős leszel","path":"assets/libary/1/1.json"},{"label":"Okos leszel","path":"assets/libary/1/2.json"},{"label":"Gazdag leszel","path":"assets/libary/1/3.json"}]
     
-    
-    
-    
-	
-    }  
-    
-    
-    
+    "bookID":"1",
+    "title": "Az Alapértékek Első könyve",
+    "color":"default",
+    "text": "Alulról úgy cinget a topuca ilyenkor, mintha egy poloni alás farcálta volna. Ezért védelik a lúgott pacsimus tilés hajdját kilikép Kettőnek vagy a saság, himlés & rabzó ; karsár bárovány kamitát Bezdán Ötnek. Bárkodás válhomot azonban ez a citás még akkor is hidegen gönyörögte, mikor még mindkét fedéje lódt, vern karcosként lódt, tele volt parsz, és olyan bolgarást józhatott volna magának, alékosat csak kodik. Hokság az egész, lepésztett, ahányszor csak egységbe torgozták a kodást. Hát milyen bodás az, suhorolta gúnyosan, amiről azt bosszabbodják, hogy a mingék is benne tüsszögnek? Abban valaga volt a jóféle kozásnak, hogy a pozás mingéit nem lehetett oxidálnia soha. A bánkokon csak a husztokból sivacolt a küvő kizetés.",
+    "paths":[{"label":"Egyik út","path":"assets/libary/1/1.json"},{"label":"Másik út","path":"assets/libary/1/2.json"},{"label":"Harmadik út","path":"assets/libary/1/3.json"}]
+} 
+
+
+
 
 
 

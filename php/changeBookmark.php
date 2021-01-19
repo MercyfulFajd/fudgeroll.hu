@@ -1,5 +1,6 @@
 <?php
 session_start();
+unset($_SESSION['errorMessage']);
 $userID=$_SESSION["userID"];
 $bookID=$_POST['bookID'];
 $path="../assets/bookmarks/$bookID/$userID.json";

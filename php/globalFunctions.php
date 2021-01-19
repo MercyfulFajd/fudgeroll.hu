@@ -1,8 +1,5 @@
 <?php
 
-function makeButton($action, $label, $class) {
-    echo "<button class='$class' onclick='$action'>$label</button>";
-}
 
 function getImageUrl($conn, $imageID) {
     $sqlGetImageUrl = "SELECT path FROM `images` WHERE `imageID` = $imageID";

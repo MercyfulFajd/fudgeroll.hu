@@ -1,9 +1,10 @@
 {
-    "bookID":2,
+    "bookID":"3",
     "title": "Az Alapértékek Harmadik könyve",
-    "text": "Kiváló",
+    "text": "Hitvány",
     
     "charsheet":"true"
+    
     
     
 } 
